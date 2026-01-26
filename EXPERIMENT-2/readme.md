@@ -1,17 +1,67 @@
-Experiment 2: Advanced Data Aggregation and Filtering
+# README – SQL SELECT Queries Using Clauses (Experiment 2)
 
-Aim of the Session The aim of this practical is to implement and analyze Group Functions and Conditional Filtering in SQL. The session focuses on using GROUP BY, HAVING, and ORDER BY clauses to extract meaningful insights from an employee dataset.
-Objective of the Session By completing this practical, I have achieved the following: • Developed a schema for employee management using appropriate data types like NUMERIC and DATE. • Mastered the use of Aggregate Functions (specifically AVG) to perform calculations on data groups. • Learned to differentiate between the WHERE clause (row-level filtering) and the HAVING clause (group-level filtering). • Gained proficiency in sorting aggregated results using the ORDER BY clause.
-Practical / Experiment Steps The following implementation tasks were completed: Schema Definition: Created the employee table with constraints and precise numeric scaling for salaries. Data Population: Inserted diverse records representing various departments (IT, HR, Sales, Finance) and salary ranges. Basic Aggregation: Calculated the average salary per department using the GROUP BY clause. Advanced Filtering: Applied the HAVING clause to filter out departments where the average salary did not meet a specific threshold. Complex Querying: Combined WHERE, GROUP BY, HAVING, and ORDER BY into a single query to refine results based on individual salaries and group averages simultaneously.
-Procedure of the Practical The experiment was conducted following these sequential steps: System Initialization: Logged into the PostgreSQL environment via pgAdmin 4 using localhost as the host server. Table Construction: Executed the CREATE TABLE command to define the structure for the employee dataset. Data Insertion: Ran multiple INSERT statements to populate the table with the provided employee data. Initial Verification: Used SELECT * to confirm that all employee records were correctly stored and formatted. Group Analysis: Executed a GROUP BY query to observe the distribution of average salaries across different departments. Applying Group Filters: Integrated the HAVING clause to restrict the output to high-paying departments (Average > 30,000). Final Refinement: Executed a comprehensive query that filtered individual employees (Salary > 20,000), grouped them by department, and sorted the results in descending order. Output Recording: Captured screenshots of the query results and saved the final SQL script for documentation.
-I/O Analysis (Input / Output Analysis) Input Queries SQL CREATE TABLE Employee ( Id VARCHAR(5), Name VARCHAR(50), Department VARCHAR(30), Salary INT, DOJ DATE );
-SELECT department, AVG(salary) AS avg_salary FROM employee WHERE salary > 20000 GROUP BY department HAVING AVG(salary) > 30000 ORDER BY avg_salary DESC;
+## 1. Aim of the Session
+The aim of this experiment is to understand and implement **SQL SELECT queries** using clauses such as **WHERE, GROUP BY, HAVING, and ORDER BY** to retrieve and analyze data efficiently from relational database tables.
 
-![Screenshot 2026-01-26 at 10 18 41 AM](https://github.com/user-attachments/assets/6ccfaa33-abe6-42c6-a849-c363361aacf2)
-![Screenshot 2026-01-26 at 10 18 45 AM](https://github.com/user-attachments/assets/01b0b8d1-21c5-470e-832a-80faa674a066)
-![Screenshot 2026-01-26 at 10 18 42 AM](https://github.com/user-attachments/assets/d75651b4-9265-4116-87d1-d98796729f6a)
+---
+
+## 2. Objective of the Session
+- To practice writing **SQL SELECT statements**
+- To apply filtering conditions using the **WHERE** clause
+- To sort query results using the **ORDER BY** clause
+- To group records using the **GROUP BY** clause
+- To filter grouped data using the **HAVING** clause
+- To analyze data using **aggregate functions** such as COUNT(), SUM(), AVG(), MIN(), and MAX()
+
+---
+
+## 3. Practical / Experiment Steps
+1. Create or use an existing `EMPLOYEE` table.
+2. Select employees whose salary is greater than 20,000 using the WHERE clause.
+3. Group employee records by department.
+4. Calculate the average salary for each department.
+5. Display only those departments where the average salary is greater than 30,000.
+6. Arrange the final output in descending order of average salary.
+
+---
+
+## 4. Procedure of the Practical
+1. The `EMPLOYEE` table is used to store employee details such as employee ID, name, department, salary, and joining date.
+2. The WHERE clause is applied to filter employees with salary greater than 20,000.
+3. The GROUP BY clause is used to group records department-wise.
+4. Aggregate functions are applied to calculate average salary.
+5. The HAVING clause is used to filter departments based on average salary.
+6. The ORDER BY clause is applied to sort the result in descending order of average salary.
+
+---
+
+## 5. I/O Analysis (Input / Output Analysis)
+
+### Input
+- Employee details (Employee ID, Name, Department, Salary, Joining Date)
+- SQL SELECT query using WHERE, GROUP BY, HAVING, and ORDER BY clauses
+
+### Output
+- Department-wise average salary
+- Only departments with average salary greater than 30,000
+- Output sorted in descending order of average salary
+## Screenshots
+
+![Screenshot 1](./e2.1.png)
+![Screenshot 2](./e2.2.png)
+![Screenshot 3](./e2.3.png)
+![Screenshot 4](./e2.4.png)
+![Screenshot 5](./e2.5.png)
+![Screenshot 6](./e2.6.png)
 
 
-Output Details • Aggregate Results: The system successfully grouped employees by department. alt text • Filtering Logic: The WHERE clause correctly excluded employees with salaries under 20,000 (like Sara and Vikram) before calculating averages.alt text • Group Filtering: The HAVING clause ensured only departments with an average salary exceeding 30,000 were displayed in the final output. • Sorting: The ORDER BY clause successfully sorted the final results from highest to lowest average salary. alt text
 
-Learning Outcome Through this session, I have developed the following competencies: • Analytical Skills: Gained the ability to transform raw row-level data into high-level summary reports using aggregation. • Query Logic: Understood the logical execution order of SQL clauses: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY. • Practical Exposure: Experienced handling real-world data scenarios, such as department-wise salary analysis and performance-based filtering in a professional database environment.
+---
+
+## 6. Learning Outcome
+After completing this experiment, I was able to:
+- Filter records using the **WHERE** clause
+- Group records using **GROUP BY**
+- Apply conditions on grouped data using **HAVING**
+- Sort query results using **ORDER BY**
+- Use aggregate functions for data analysis
