@@ -47,12 +47,12 @@ The aim of this experiment is to understand and implement **SQL SELECT queries**
 - Output sorted in descending order of average salary
 ## Screenshots
 
-![Screenshot 1](./e2.1.png)
-![Screenshot 2](./e2.2.png)
-![Screenshot 3](./e2.3.png)
-![Screenshot 4](./e2.4.png)
-![Screenshot 5](./e2.5.png)
-![Screenshot 6](./e2.6.png)
+
+![Screenshot 2026-01-26 at 10 18 45 AM](https://github.com/user-attachments/assets/d297789e-b50a-4f8e-b262-0e2eb7a321e6)
+
+![Screenshot 2026-01-26 at 10 18 42 AM](https://github.com/user-attachments/assets/ca32331f-ab91-45a9-9886-f47608587c74)
+
+![Screenshot 2026-01-26 at 10 18 41 AM](https://github.com/user-attachments/assets/e8bc741a-df22-49e5-8da1-646859f58ed9)
 
 
 
