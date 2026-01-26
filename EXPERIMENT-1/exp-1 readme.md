@@ -57,6 +57,21 @@ CREATE ROLE librarian WITH LOGIN PASSWORD 'PASSWORD';
 
 GRANT SELECT, INSERT, DELETE, UPDATE ON books TO librarian;
 
+![Screenshot 2026-01-26 at 10 05 31 AM](https://github.com/user-attachments/assets/8aa65a7b-3b1b-4478-856a-0a775fa167df)
+![Screenshot 2026-01-26 at 10 05 59 AM](https://github.com/user-attachments/assets/edbcd824-7ce4-4fe1-9468-ce3c1f5ec4ba)
+![Screenshot 2026-01-26 at 10 06 32 AM](https://github.com/user-attachments/assets/140be220-dd27-409e-90bd-fe01960f74bc)
+![Screenshot 2026-01-26 at 10 06 33 AM](https://github.com/user-attachments/assets/b3f57913-da13-4481-900d-d2db498de9bf)
+![Screenshot 2026-01-26 at 10 06 55 AM](https://github.com/user-attachments/assets/fced96cc-e43f-4afc-99d1-ace145906e95)
+![Screenshot 2026-01-26 at 10 07 11 AM](https://github.com/user-attachments/assets/4291e4e8-ae05-429f-bdb8-eddad94783c8)
+![Screenshot 2026-01-26 at 10 07 33 AM](https://github.com/user-attachments/assets/91bc54b4-4f6a-4e22-a13b-1476bacf4b68)
+
+
+
+
+
+
+
+
 Output Details Schema Success: All tables were created successfully. The system correctly enforced the CHECK(age>=18) constraint, rejecting invalid entries. alt text DML Results: The UPDATE query correctly modified the email field for user 101, and SELECT queries displayed the current state of all tables accurately. alt text
 
 DCL Verification: The librarian role was successfully created and assigned the necessary privileges for library management tasks.
