@@ -8,6 +8,9 @@ I/O Analysis (Input / Output Analysis) Input Queries SQL CREATE TABLE Employee (
 SELECT department, AVG(salary) AS avg_salary FROM employee WHERE salary > 20000 GROUP BY department HAVING AVG(salary) > 30000 ORDER BY avg_salary DESC;
 
 ![Screenshot 2026-01-26 at 10 18 41 AM](https://github.com/user-attachments/assets/6ccfaa33-abe6-42c6-a849-c363361aacf2)
+![Screenshot 2026-01-26 at 10 18 45 AM](https://github.com/user-attachments/assets/01b0b8d1-21c5-470e-832a-80faa674a066)
+![Screenshot 2026-01-26 at 10 18 42 AM](https://github.com/user-attachments/assets/d75651b4-9265-4116-87d1-d98796729f6a)
+
 
 Output Details • Aggregate Results: The system successfully grouped employees by department. alt text • Filtering Logic: The WHERE clause correctly excluded employees with salaries under 20,000 (like Sara and Vikram) before calculating averages.alt text • Group Filtering: The HAVING clause ensured only departments with an average salary exceeding 30,000 were displayed in the final output. • Sorting: The ORDER BY clause successfully sorted the final results from highest to lowest average salary. alt text
 
